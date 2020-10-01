@@ -36,3 +36,6 @@ images/
 
 # VS Code
 .vscode/
+
+# builds
+build/*

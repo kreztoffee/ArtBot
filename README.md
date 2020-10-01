@@ -2,16 +2,17 @@
 
 A CLI tool to generate random, pretty png's. ArtBot is capable of producing images in any resolution. Different methods of producing images can be substituted for one another.
 
-ArtBot is dependency-free and hence can be built very simply, using the command:
+ArtBot can be built out of the box using make:
 
 ```
-g++ -std=c++17 src/*.cpp -o artbot.o
+make clean
+make
 ```
 
-To run ArtBot run the command:
+ArtBot can be run from the build folder:
 
 ```
-./artbot.o
+./artbot
 ```
 
 This will run ArtBot with a random seed, creating a png whose name is based on the seed. The default width is 256 pixels.
@@ -27,7 +28,7 @@ These details can be changed using command arguments.
 Here's an example command that would create a png called `test.png` with the random seed `1591005661` with resolution `4096`:
 
 ```
-./artbot.o -n test -s 1591005661 -w 4096
+./artbot -n test -s 1591005661 -w 4096
 ```
 
 | ![1](./img/demo1.png "Demo Image 1") | ![2](./img/demo2.png "Demo Image 2") |
